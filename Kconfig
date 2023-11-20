@@ -1,0 +1,10 @@
+mainmenu "Zephyr task"
+
+menu "Zephyr task configuration"
+
+config MESSAGE_QUEUE_SIZE
+	int "Message queue size"
+	default 10
+endmenu
+
+source "Kconfig.zephyr"

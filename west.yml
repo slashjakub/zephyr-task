@@ -1,0 +1,21 @@
+manifest:
+  defaults:
+    remote: remote
+
+  remotes:
+    - name: remote
+      url-base: https://github.com/slashjakub/zephyr-task
+
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: zephyr-v3.5.0
+      path: deps/zephyr
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_nordic
+          - nrfxlib
+ 
+  self:
+    path: app
